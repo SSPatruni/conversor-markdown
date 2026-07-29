@@ -1,0 +1,92 @@
+# ---------------------------------------------------------------
+# SEGURANÇA — impede que documento processado vá para o repositório
+# ---------------------------------------------------------------
+# Esta é a regra mais importante deste arquivo. Os arquivos que o
+# programa lê e gera podem conter dados de partes, advogados e
+# terceiros. Nada disso pode ser publicado.
+
+*.md
+*.pdf
+*.docx
+*.doc
+*.pptx
+*.xlsx
+*.xls
+*.csv
+*.tsv
+*.rtf
+*.epub
+*.txt
+
+# Exceções explícitas: documentação e metadados do próprio projeto
+!README.md
+!CONTRIBUTING.md
+!CHANGELOG.md
+!docs/
+!docs/**/*.md
+!requirements.txt
+!requirements-dev.txt
+
+# Pastas de trabalho
+saida/
+output/
+convertidos/
+entrada/
+processos/
+teste/
+tests/fixtures/
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib60/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Ferramentas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------
+# Editores e sistema operacional
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.DS_Store
