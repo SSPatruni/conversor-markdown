@@ -1,0 +1,15 @@
+# Conversor Markdown - dependências
+#
+# Instalação:
+#     pip install -r requirements.txt
+#
+# Todas as dependências têm licença permissiva, compatível com MIT.
+# O PyMuPDF foi deliberadamente evitado por ser AGPL-3.0.
+
+# Extração de PDF. Motor PDFium, o mesmo do Chrome.
+# Licença BSD-3-Clause e Apache-2.0.
+pypdfium2>=4.30.0
+
+# Conversão dos demais formatos: docx, pptx, xlsx, html, imagens, áudio.
+# Licença MIT.
+markitdown[all]>=0.1.0
